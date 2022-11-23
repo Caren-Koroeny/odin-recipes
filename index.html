@@ -4,41 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Odin Food Recipe</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <div class="gallery">
-        <figure class="gallery_item item1" >
-            <img class="gallery_img" src="https://www.allrecipes.com/thmb/2WS6uxtM4tN9RQN1wuN-YcVd404=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/img_388520smoothies20in20cups20part20220Photo20by20Mackenzie20Schieck20650x465-cb9d6035fcac4f6fb2bd799a6642fab9.jpg" alt="">
-        </figure>
-        <figure class="gallery_item item2" >
-           <img class="gallery_img" src="https://www.allrecipes.com/thmb/CaEc4MglG-jri4eNc9SaUW6Cz1A=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Black-Beans-and-Rice-by-House-of-Aqua-2119665_original-4e87fb50007047deb0756d83d15591b7.jpg" alt="">
-            <!-- <img src="https://www.allrecipes.com/thmb/2WS6uxtM4tN9RQN1wuN-YcVd404=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/img_388520smoothies20in20cups20part20220Photo20by20Mackenzie20Schieck20650x465-cb9d6035fcac4f6fb2bd799a6642fab9.jpg" alt=""> -->
-        </figure>
-        <figure class="gallery_item item3" >
-            <img class="gallery_img" src="https://www.allrecipes.com/thmb/pXp44pBOg8V827PSvupSya8qWLU=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/image-9e5c4aa20ccf4579a9e56eec692171ec.jpg" alt="">
-            <!-- <img src="https://www.allrecipes.com/thmb/2WS6uxtM4tN9RQN1wuN-YcVd404=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/img_388520smoothies20in20cups20part20220Photo20by20Mackenzie20Schieck20650x465-cb9d6035fcac4f6fb2bd799a6642fab9.jpg" alt=""> -->
-        </figure>
-        <figure class="gallery_item item4" >
-            <img class="gallery_img" src="https://www.allrecipes.com/thmb/dDj2wdQQcuTb9KJ3rdtGCux8SqQ=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4535513-6c4baac83f90418084c377567106a708.jpg" alt="">
-            <!-- <img src="https://www.allrecipes.com/thmb/2WS6uxtM4tN9RQN1wuN-YcVd404=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/img_388520smoothies20in20cups20part20220Photo20by20Mackenzie20Schieck20650x465-cb9d6035fcac4f6fb2bd799a6642fab9.jpg" alt=""> -->
-        </figure>
-        <figure class="gallery_item item5" >
-            <img class="gallery_img" src="https://www.allrecipes.com/thmb/sCDAdJQ-usk3Q-OpA54UllwwgwY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/270515-42a68d5e9b1f4614a159d3dfbc7882be.jpg" alt="">
-            <!-- <img src="https://www.allrecipes.com/thmb/2WS6uxtM4tN9RQN1wuN-YcVd404=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/img_388520smoothies20in20cups20part20220Photo20by20Mackenzie20Schieck20650x465-cb9d6035fcac4f6fb2bd799a6642fab9.jpg" alt=""> -->
-        </figure>
-        <figure class="gallery_item item6" >
-            <img class="gallery_img" src="https://www.allrecipes.com/thmb/HRwKPX-HyenSwBzKp5M92UrxNfA=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1384969-spicy-grilled-shrimp-KGora-1x1-1-77078f6e15bc47809cfa1e165a76c9eb.jpg" alt="">
-            <!-- <img src="https://www.allrecipes.com/thmb/2WS6uxtM4tN9RQN1wuN-YcVd404=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/img_388520smoothies20in20cups20part20220Photo20by20Mackenzie20Schieck20650x465-cb9d6035fcac4f6fb2bd799a6642fab9.jpg" alt=""> -->
-        </figure>
-        <!-- <figure class="gallery_item item7" >
-            <img class="gallery_img" src="https://www.allrecipes.com/thmb/VhwT2PBcAYWyu0MeGFPZJoLt90Y=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/5349279-55583fba9802487c9151377eaebb3f95.jpg" alt="">
-            </figure>
-        <figure class="gallery_item item8" >
-            <img class="gallery_img" src="https://www.allrecipes.com/thmb/CzmOr6XUpMcnrOfkujbNa4cmIiw=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1654235-caf2bad40e114a678f274dedfb75a901.jpg" alt="">
-            </figure> -->
+  
+  <div class="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="/images/intro.mp4" type="video/mp4">
+
+    </video>
+    <nav>
+      <img src="/images/401-logo.png"  class="logo" alt="">
+      <ul>
+        <li><a href="/recipes/home.html">Home</a></li>
+        <li><a href="#">Vegan Food</a></li>
+        <li><a href="#">Smoothies</a></li>
+        <li><a href="#">Fruits</a></li>
+        <li><a href="#">Others</a></li>
+        <li><a href="#">Footer</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Odin Food Recipe</h1>
+      <a href="/recipes/home.html">Explore</a>
     </div>
+
+  </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--     
+    <div class="card">
+        <div class="front">
+            <section>
+                <img src="https://media.istockphoto.com/id/1309690887/photo/delicious-italian-caprese.jpg?s=612x612&w=0&k=20&c=h3ugIk2kEa64FC18Y0gAnJcrzqjpdCP3__wgps5KB6M=" alt="">
+                     <h1>Yassine Abouzia</h1>
+                    <p>Web Designer & Mobile Application Developer</p>
+            </section>
+            <hr>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <span>Hover To Contact Me</span>
+        </div>
+        <div class="back">
+          <img src="https://media.istockphoto.com/id/1307888463/photo/capri.jpg?s=612x612&w=0&k=20&c=i8dmoATuNVm_1l9UiSts0sMuIOaTecisv4e9-dpVUu8=" alt="images">
+            <ul>
+                
+            </ul>
+          
+          <button id="btn"><a href="/recipes/tomato_berry.html">Click View Recipe</a> </button>
+        </div> -->
+
+
+
+        
