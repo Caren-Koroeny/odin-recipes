@@ -4,59 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-    <!-- <section id="section01" class="demo">
-        <h1>Scroll Down Button #1</h1>
-        <a href="#section02"><span></span>Scroll</a>
-      </section>
+    <body>
 
-      <section id="section02" class="demo">
-        <h1>Scroll Down Button #2</h1>
-        <a href="#section03"><span></span>Scroll</a>
-      </section> -->
-
-      <section id="section03" class="demo">
-        <h1>Scroll Down Button #3</h1>
-        <a href="#section04"><span></span>Scroll</a>
-      </section>
-
-      <section id="section04" class="demo">
-        <h1>Scroll Down Button #4</h1>
-        <a href="#section05"><span></span>Scroll</a>
-      </section>
-      <section id="section05" class="demo">
-        <h1>Scroll Down Button #5</h1>
-        <a href="#section06"><span></span>Scroll</a>
-      </section>
-      <section id="section06" class="demo">
-        <h1>Scroll Down Button #6</h1>
-        <a href="#section07"><span></span>Scroll</a>
-      </section>
-      <section id="section07" class="demo">
-        <h1>Scroll Down Button #7</h1>
-        <a href="#section08"><span></span><span></span><span></span>Scroll</a>
-      </section>
-      <section id="section08" class="demo">
-        <h1>Scroll Down Button #8</h1>
-        <a href="#section09"><span></span>Scroll</a>
-      </section>
-      <section id="section09" class="demo">
-        <h1>Scroll Down Button #9</h1>
-        <a href="#section10"><span></span>Scroll</a>
-      </section>
-      <section id="section10" class="demo">
-        <h1>Scroll Down Button #10</h1>
-        <a href="#thanks"><span></span>Scroll</a>
-      </section>
-      <section id="thanks">
-        <div>
-          <h2>Thanks!</h2>
-          <p><a href="https://www.nxworld.net/css-scroll-down-button.html" target="_parent">&lt; Back To Article</a></p>
+        <div class="header">
+            <div class="header_left">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    
+                </ul>
+            </div>
+            </div>
         </div>
-      </section>
-    <script src="/index.js"></script>
+    
+        <!-- ***************** header end ******************** -->
+    
+     
+            <section  class="section section_1" id="home">
+            <div class="text_box">
+                <h1 class="heading">Welcome to Odin Food Recipe</h1>
+                
+        
+            </div>
+        
+        </section>
+    
+        <section  class="section section_2" id="about">
+            <div class="text_box">
+                <h1 class="heding">About Odin Foodie</h1>
+                <p class="info">This is an Odin project to create Food Recipes</p>
+                <!-- <p class="intro">Divided into three categories</p> -->
+                <div class="cards">
+                    <article class="card">
+                        <figure class="card-img">
+                            <img src="/images/meals.jpeg" alt="">
+                            <figcaption>
+                                Vegan Food
+                            </figcaption>
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Vegan Foods</h2>
+                            <p class="card-text">Healthy meal is essintial for all human.Click the link below to see step by step preparation of some vegan meal.</p>
+                        </div>
+                        <button class="button-1"><a href="/recipes/vegan.html">Read More</a> </button>
+                    </article>
+
+
+                    <article class="card">
+                        <figure class="card-img">
+                            <img src="https://images.pexels.com/photos/6895933/pexels-photo-6895933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            <figcaption>
+                                Smoothies
+                            </figcaption>
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Smoothies</h2>
+                            <p class="card-text">Having a cup of blended juice is said to be very refreshing take a look of how some of them are prepared.</p>
+                        </div>
+                        <button class="button-1"><a href="/recipes/smoothies.html">Read More</a> </button>
+                    </article>
+
+                    <article class="card">
+                        <figure class="card-img">
+                            <img src="https://images.pexels.com/photos/5604832/pexels-photo-5604832.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                            <figcaption>
+                                <p class="capt">Fruits</p> 
+                            </figcaption>
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Fruits</h2>
+                            <p class="card-text">To fight any disease use fruit salad, its the best medicinal drug around us  click to see how some are prepared.</p>
+                        </div>
+                        <button class="button-1"><a href="/recipes/fruits.html">Read More</a> </button>
+                    </article>
+
+                    
+
+                   
+        </section>
+    
+    
+        <section  class="section section_3">
+            <div class="hero">
+                <video autoplay loop muted plays-inline class="back-video">
+                  <source src="https://assets.mixkit.co/videos/preview/mixkit-dropping-ice-into-a-cocktail-27456-large.mp4" type="video/mp4">
+                </video>
+                
+            <div class="text_box">
+                <h1 class="heding">Menu</h1>
+
+                <div class="content">
+                    <h1>Odin Food Recipe</h1>
+                    <a href="/recipes/home.html">Explore</a>
+                  </div>
+              
+                	
+            </div>
+            </div>
+
+        </section>
+    
+    
+    
+        <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+                integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+            ></script>
+    
+            <script src="/index.js"></script>
+           
+    </body>
+    
 </body>
 </html>
